@@ -17,7 +17,7 @@ services:
     volumes:
       - /var/lib/mobilebanking
   insurance:
-    image: aryandockerhub/insurance-image:latest
+    image: aryandockerhub/insurance:latest
     ports:
       - "83:80"
     deploy:
@@ -25,10 +25,10 @@ services:
     volumes:
       - /var/lib/insurance
   loan:
-    image: aryandockerhub/loans-image:latest
+    image: aryandockerhub/loans:latest
     ports:
       - "84:80"
     deploy:
       replicas: 3
     volumes:
-      - /var/lib/loan
+      - /var/lib/loans
