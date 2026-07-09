@@ -7,7 +7,7 @@ services:
     deploy:
       replicas: 3
     volumes:
-      - /var/lib/internetbanking
+      - /var/lib/ib-image
   mobilebanking:
     image: aryandockerhub/mb-image:latest
     ports:
@@ -15,7 +15,7 @@ services:
     deploy:
       replicas: 3
     volumes:
-      - /var/lib/mobilebanking
+      - /var/lib/mb-image
   insurance:
     image: aryandockerhub/insurance:latest
     ports:
