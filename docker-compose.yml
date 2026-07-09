@@ -19,7 +19,7 @@ services:
   insurance:
     image: aryandockerhub/insurance:latest
     ports:
-      - "83:80"
+      - "85:80"
     deploy:
       replicas: 3
     volumes:
